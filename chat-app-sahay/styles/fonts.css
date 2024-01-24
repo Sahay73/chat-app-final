@@ -1,0 +1,16 @@
+@font-face {
+  font-family: cerebrisans;
+  src: url("../assets/fonts/cerebrisans-regular.woff");
+}
+@font-face {
+  font-family: cerebrisans-light;
+  src: url("../assets/fonts/CerebriSansPro-Light.ttf");
+}
+@font-face {
+  font-family: cerebrisans-bold;
+  src: url("../assets/fonts/cerebrisans-semibold.woff");
+}
+:root {
+  --font-regular: cerebrisans-light, sans-serif;
+  --font-bold: cerebrisans-bold, sans-serif;
+}

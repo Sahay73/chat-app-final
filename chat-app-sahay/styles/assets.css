@@ -1,0 +1,31 @@
+/* :root {
+  --side-menu-W: 75px;
+  --chat-list-w: 300px;
+  --navigate-panel: #2e2e2e;
+  --nav-icon-default: #878a92;
+  --active-green: #4eac6d;
+  --white-bg: #ffffff;
+  --black-bg: black;
+  --chat-headding: #495057;
+  --chat-list-headding: #777c81;
+  --online-active: #06d6a0;
+  --unread-msg-active: #78bf90;
+  --unread-msg: #e6ebf5;
+  --chat-search-bar: #f6f6f9;
+  --channel-bg: #fcfcfd;
+  --chat-conversation: #f2f2f2;
+  --replay-continer: #f3f3f3;
+  --message-sent: #cce2d3;
+} */
+:root {
+  --side-menu-bg: #2e2e2e;
+  --chat-list-bg: #ffffff;
+  --chat-conversation-bg: #f2f2f2;
+  --menu-icons-CLR: #878a92;
+  --active-green-bg: #4eac6d;
+  --font-color: #495057;
+  --chat-default-btn: #b8dec54a;
+  --list-search-bar: #f6f6f9;
+  --online-status-green: #06d6a0;
+  --unread-bg: #78bf90;
+}

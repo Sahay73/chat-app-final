@@ -1,0 +1,31 @@
+:root {
+  --side-menu-W: 75px;
+  --caht-list-W: 300px;
+}
+.app-continer {
+  background-color: #f2f2f2;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  font-family: var(--font-regular);
+  color: var(--font-color);
+}
+.side-menu-continer {
+  background-color: var(--side-menu-bg);
+  height: 100%;
+  width: var(--side-menu-W);
+}
+.chat-list-continer {
+  background-color: var(--chat-list-bg);
+  height: 100%;
+  width: var(--caht-list-W);
+}
+.Chat-conversation {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../assets/icons/pattern-05.png);
+  background-color: var(--chat-conversation-bg);
+  height: 100%;
+  position: relative;
+  width: calc(100% - (var(--caht-list-W) + var(--side-menu-W)));
+}

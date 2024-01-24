@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat | Dood - Sahay</title>
+    <link rel="stylesheet" href="styles/roots.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app-continer">
+      <!-- side-menu-section -->
+      <aside class="side-menu-continer">
+        <nav class="side-menu-nav">
+          <div class="menu-icons Mt-2 Mb-2">
+            <a href="">
+              <svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="30px"
+                height="30px"
+                viewBox="0 0 24 24"
+                enable-background="new 0 0 24 24"
+                xml:space="preserve"
+              >
+                <path
+                  fill="#4EAC6D"
+                  d="M8.5,18l3.5,4l3.5-4H19c1.104,0,2-0.896,2-2V4c0-1.103-0.896-2-2-2H5C3.897,2,3,2.897,3,4v12
+                    c0,1.104,0.897,2,2,2H8.5z M7,7h10v2H7V7z M7,11h7v2H7V11z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="H-100">
+            <ul class="menu-icon-list">
+              <li>
+                <a class="menu-icons" href="">
+                  <i class="bx menu-control-icons bx-user-circle"></i>
+                </a>
+              </li>
+              <li class="active menu-icons">
+                <a href="">
+                  <i class="bx menu-control-icons bx-conversation"></i>
+                </a>
+              </li>
+              <li class="menu-icons">
+                <a href="">
+                  <i class="bx menu-control-icons bxs-user-detail"></i>
+                </a>
+              </li>
+              <li class="menu-icons">
+                <a href="">
+                  <i class="bx menu-control-icons bx-phone-call"></i>
+                </a>
+              </li>
+              <li class="menu-icons">
+                <a href="">
+                  <i class="bx menu-control-icons bx-bookmarks"></i>
+                </a>
+              </li>
+              <li class="menu-icons">
+                <a href="">
+                  <i class="bx menu-control-icons bx-cog"></i>
+                </a>
+              </li>
+              <li class="Mt-auto Mb-15 menu-icons">
+                <a href="">
+                  <i class="bx menu-control-icons bx-moon"></i>
+                </a>
+              </li>
+              <li class="Mb-85">
+                <a href="">
+                  <img
+                    src="./assets/images/myprofile.jpg"
+                    height="36"
+                    width="36"
+                    alt="myprofile"
+                    class="profile-border"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </aside>
+      <!-- // side-menu-section // -->
+
+      <!-- chat-list-section -->
+      <section class="chat-list-continer">
+        <!-- chat-search-add -->
+        <div class="chat-list-head">
+          <div class="D-flx JC-SB AI-C Pb-20">
+            <h4>Chats</h4>
+            <a class="add-default" href="">
+              <i class="bx FS-13 bx-plus"></i>
+            </a>
+          </div>
+          <div class="D-flx JC-SB AI-C Mb-1">
+            <input
+              placeholder="Search here..."
+              class="search-bar"
+              type="text"
+            />
+            <button class="btn-search">
+              <i class="bx Fs-15 bx-search align-middle"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Chat-list -->
+        <div class="chat-user-list">
+          <div class="H-auto W-100">
+            <!-- Favourites-list -->
+            <div>
+              <div class="favo-user-list">
+                <h5>FAVOURITES</h5>
+              </div>
+              <div>
+                <ul>
+                  <li class="user-list active-contact">
+                    <a class="display-user" href="">
+                      <div class="user-chat-profile">
+                        <img
+                          src="assets/images/avatar-2.jpg"
+                          height="28"
+                          width="29"
+                          alt="ChatProfile"
+                        />
+                      </div>
+                      <span class="online-status"></span>
+                      <div>
+                        <p class="active-chat-name Fw-600">Bella Cote</p>
+                      </div>
+                      <div class="Ml-auto">
+                        <span class="active-unread-msg Fw-600">18</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="display-user" href="">
+                      <div class="user-chat-profile">
+                        <img
+                          src="assets/images/avatar-7.jpg"
+                          height="28"
+                          width="29"
+                          alt="ChatProfile"
+                        />
+                      </div>
+                      <span class="online-status"></span>
+                      <div>
+                        <p class="chat-name">Steven Jury</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="display-user" href="">
+                      <div class="user-chat-profile">
+                        <span>JP</span>
+                      </div>
+                      <span class="online-status"></span>
+                      <div>
+                        <p class="chat-name">James Pinard</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="display-user" href="">
+                      <div class="user-chat-profile">
+                        <img
+                          src="assets/images/avatar-4.jpg"
+                          height="28"
+                          width="29"
+                          alt="ChatProfile"
+                        />
+                      </div>
+                      <span class="online-status"></span>
+                      <div>
+                        <p class="chat-name">Alissa Richards</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Direct-message-list -->
+            <div>
+              <div class="Mt-50 Mb-10 P-RL direct-msg">
+                <h5>DIRECT MESSAGES</h5>
+                <a class="add-default" href="">
+                  <i class="bx FS-13 bx-plus"></i>
+                </a>
+              </div>
+              <div>
+                <ul class="">
+                  <li>
+                    <a class="display-user" href="">
+                      <div class="user-chat-profile">
+                        <img
+                          src="assets/images/avatar-3.jpg"
+                          height="28"
+                          width="29"
+                          alt="ChatProfile"
+                        />
+                      </div>
+                      <span class="online-status"></span>
+                      <div>
+                        <p class="chat-name Fw-600">Nicholas Staten</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="display-user" href="">
+                      <div class="user-chat-profile">
+                        <img
+                          src="assets/images/avatar-12.jpg"
+                          height="28"
+                          width="29"
+                          alt="ChatProfile"
+                        />
+                      </div>
+                      <span class="online-status"></span>
+                      <div>
+                        <p class="chat-name">Kathryn Swarey</p>
+                      </div>
+                      <div class="Ml-auto">
+                        <span class="unread-msg Fw-600">8</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="display-user" href="">
+                      <div class="user-chat-profile">
+                        <img
+                          src="assets/images/avatar-5.jpg"
+                          height="28"
+                          width="29"
+                          alt="ChatProfile"
+                        />
+                      </div>
+                      <span class="online-status"></span>
+                      <div>
+                        <p class="chat-name">Robert Ledonne</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="display-user" href="">
+                      <div class="user-chat-profile">
+                        <img
+                          src="assets/images/avatar-7.jpg"
+                          height="28"
+                          width="29"
+                          alt="ChatProfile"
+                        />
+                      </div>
+                      <span class="online-status"></span>
+                      <div>
+                        <p class="chat-name">Steven Jury</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="display-user" href="">
+                      <div class="user-chat-profile">
+                        <span>JL</span>
+                      </div>
+                      <span class="online-status"></span>
+                      <div>
+                        <p class="chat-name">Jessica Lewis</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="display-user" href="">
+                      <div class="user-chat-profile">
+                        <img
+                          src="assets/images/avatar-9.jpg"
+                          height="28"
+                          width="29"
+                          alt="ChatProfile"
+                        />
+                      </div>
+                      <span class="online-status"></span>
+                      <div>
+                        <p class="chat-name">John Foss</p>
+                      </div>
+                      <div class="Ml-auto">
+                        <span class="unread-msg Fw-600">5</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="display-user" href="">
+                      <div class="user-chat-profile">
+                        <img
+                          src="assets/images/avatar-10.jpg"
+                          height="28"
+                          width="29"
+                          alt="ChatProfile"
+                        />
+                      </div>
+                      <span class="online-status"></span>
+                      <div>
+                        <p class="chat-name">Gloria Underhill nm</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- channels -->
+            <div>
+              <div class="Mt-50 Mb-10 P-RL direct-msg">
+                <h5>CHANNELS</h5>
+                <a class="add-default" href="">
+                  <i class="bx FS-13 bx-plus"></i>
+                </a>
+              </div>
+              <div>
+                <ul class="Mb-1">
+                  <li>
+                    <a class="display-user" href="">
+                      <div class="user-chat-profile channel-profile">
+                        <span>#</span>
+                      </div>
+                      <div>
+                        <p class="chat-name Fw-600">Landing Design</p>
+                      </div>
+                      <div class="Ml-auto">
+                        <span class="unread-msg Fw-600">12</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="display-user" href="">
+                      <div class="user-chat-profile channel-profile">
+                        <span>#</span>
+                      </div>
+                      <div>
+                        <p class="chat-name">Design Phase 2</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="display-user" href="">
+                      <div class="user-chat-profile channel-profile">
+                        <span>#</span>
+                      </div>
+                      <div>
+                        <p class="chat-name">Brand Suggestion</p>
+                      </div>
+                      <div class="Ml-auto">
+                        <span class="unread-msg Fw-600">85</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="display-user" href="">
+                      <div class="user-chat-profile channel-profile">
+                        <span>#</span>
+                      </div>
+                      <div>
+                        <p class="chat-name">Reporting</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- chat-conversation -->
+      <main class="Chat-conversation">
+        <header class="conversation-header">
+          <nav class="Conversation-nav">
+            <div class="profile-continer">
+              <div class="Mr-1 P-Rel">
+                <img
+                  class="profile-image"
+                  src="assets/images/avatar-2.jpg"
+                  height="28"
+                  width="29"
+                  alt="ChatProfile"
+                />
+                <span class="online-status"></span>
+              </div>
+              <div>
+                <a href="">
+                  <h5 class="Fs-18">Bella Cote</h5>
+                </a>
+                <p class="Mt-5"><small>Online</small></p>
+              </div>
+            </div>
+            <div class="D-flx">
+              <ul class="header-options">
+                <li>
+                  <a href=""
+                    ><i class="bx Fs-22 bx-search user-chat-nav"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="bx Fs-22 bxs-phone-call user-chat-nav"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href=""><i class="bx Fs-22 bx-video user-chat-nav"></i></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="bx Fs-22 bxs-info-circle user-chat-nav"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><i
+                      class="bx Fs-22 bx-dots-vertical-rounded user-chat-nav"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <section class="conversation-continer">
+          <ul class="Mt-95 Pt-5">
+            <li class="recived-continer">
+              <div class="user-chat-profile Mr-16">
+                <img
+                  src="assets/images/avatar-2.jpg"
+                  height="28"
+                  width="29"
+                  alt="ChatProfile"
+                />
+              </div>
+              <div>
+                <div class="D-flx FD-C">
+                  <div class="D-flx">
+                    <p class="recive-bg chat-msg">Good morning 😊</p>
+                    <a
+                      href="
+                    "
+                    >
+                      <i class="ri-more-2-fill P-4"></i>
+                    </a>
+                  </div>
+                </div>
+                <small>10:07 am</small>
+              </div>
+            </li>
+            <li class="sent-continer">
+              <div class="Ta-end">
+                <div class="D-flx FD-C">
+                  <div class="D-flx">
+                    <a
+                      href="
+                    "
+                    >
+                      <i class="ri-more-2-fill P-4"></i>
+                    </a>
+                    <p class="sent-bg chat-msg">
+                      Good morning, How are you? What about our next meeting?
+                    </p>
+                  </div>
+                </div>
+                <small>10:07 am</small>
+              </div>
+            </li>
+            <li class="recived-continer">
+              <div class="user-chat-profile Mr-16">
+                <img
+                  src="assets/images/avatar-2.jpg"
+                  height="28"
+                  width="29"
+                  alt="ChatProfile"
+                />
+              </div>
+              <div>
+                <div class="D-flx FD-C">
+                  <div class="D-flx">
+                    <p class="recive-bg chat-msg">
+                      Yeah everything is fine. Our next meeting tomorrow at
+                      10.00 AM
+                    </p>
+                    <a
+                      href="
+                    "
+                    >
+                      <i class="ri-more-2-fill P-4"></i>
+                    </a>
+                  </div>
+                  <div class="D-flx">
+                    <p class="recive-bg chat-msg">
+                      Hey, I'm going to meet a friend of mine at the department
+                      store. I have to buy some presents for my parents 🎁.
+                    </p>
+                    <a
+                      href="
+                    "
+                    >
+                      <i class="ri-more-2-fill P-4"></i>
+                    </a>
+                  </div>
+                </div>
+                <small>10:07 am</small>
+              </div>
+            </li>
+            <li class="sent-continer">
+              <div class="Ta-end">
+                <div class="D-flx FD-C">
+                  <div class="D-flx">
+                    <a
+                      href="
+                    "
+                    >
+                      <i class="ri-more-2-fill P-4"></i>
+                    </a>
+                    <p class="sent-bg chat-msg">Wow that's great</p>
+                  </div>
+                </div>
+                <small>10:07 am</small>
+              </div>
+            </li>
+            <li class="recived-continer">
+              <div class="user-chat-profile Mr-16">
+                <img
+                  src="assets/images/avatar-2.jpg"
+                  height="28"
+                  width="29"
+                  alt="ChatProfile"
+                />
+              </div>
+              <div>
+                <div class="D-flx FD-R G-8 Mb-15">
+                  <div class="P-Rel">
+                    <div>
+                      <img
+                        src="assets/images/img-1.jpg"
+                        width="150"
+                        alt="img-1"
+                      />
+                    </div>
+
+                    <a class="asset-msg-option" href="">
+                      <i
+                        class="bx bx-dots-horizontal-rounded bx-dots-horizontal"
+                      ></i>
+                    </a>
+                  </div>
+                  <div class="P-Rel">
+                    <div>
+                      <img
+                        src="assets/images/img-2.jpg"
+                        width="150"
+                        alt="img-2"
+                      />
+                    </div>
+
+                    <a class="asset-msg-option" href="">
+                      <i
+                        class="bx bx-dots-horizontal-rounded bx-dots-horizontal"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+                <small>10:07 am</small>
+              </div>
+            </li>
+            <li class="sent-continer">
+              <div class="Ta-end">
+                <div class="document-msg">
+                  <div class="document">
+                    <div class="attachment">
+                      <i class="ri-attachment-2 attachment-icon"></i>
+                    </div>
+                    <div class="doc-details">
+                      <h5 class="FS-14 Mb-05">design-phase-1-approved.pdf</h5>
+                      <p class="FS-14">12.5 MB</p>
+                    </div>
+                    <a
+                      href="
+                          "
+                    >
+                      <i class="bx FS-20 bxs-download user-chat-nav"></i>
+                    </a>
+                  </div>
+                </div>
+                <small>10:07 am</small>
+              </div>
+            </li>
+            <li class="recived-continer">
+              <div class="user-chat-profile Mr-16">
+                <img
+                  src="assets/images/avatar-2.jpg"
+                  height="28"
+                  width="29"
+                  alt="ChatProfile"
+                />
+              </div>
+              <div>
+                <div class="D-flx FD-C">
+                  <div class="D-flx">
+                    <p class="recive-bg chat-msg">Typing...</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <footer class="conversation-footer">
+          <div class="chat-input-options">
+            <button class="secondary-btn">
+              <i
+                class="bx Fs-22 bx-dots-horizontal-rounded user-chat-nav align-middle"
+              ></i>
+            </button>
+            <button class="secondary-btn">
+              <i class="bx Fs-22 bx-smile align-middle user-chat-nav"></i>
+            </button>
+            <input class="message-input" type="text" />
+            <button class="secondary-btn">
+              <i class="bx Fs-22 bx-microphone user-chat-nav align-middle"></i>
+            </button>
+            <button class="primary-btn">
+              <i class="bx bxs-send align-middle" id="submit-btn"></i>
+            </button>
+          </div>
+          <div></div>
+          <div></div>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

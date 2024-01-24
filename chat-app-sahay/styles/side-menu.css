@@ -1,0 +1,34 @@
+.side-menu-nav {
+  height: 100%;
+  width: 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+}
+.menu-icon-list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.menu-icons {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bx {
+  font-size: 28px;
+  color: var(--menu-icons-CLR);
+}
+.profile-border {
+  border: 3.5px #eaeaf1 solid;
+  border-radius: 50%;
+}
+.active .bx {
+  color: var(--active-green-bg);
+  position: relative;
+}
+/* .active-border {
+  border-right: 2px solid var(--active-green-bg);
+  position: absolute;
+} */
